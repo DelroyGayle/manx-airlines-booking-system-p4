@@ -960,7 +960,7 @@ def find_N_seats(number_needed, allocated, available):
         result = row_of_N_seats(count, allocated, available)
         if not result[0]:
             # Try a smaller row allocation
-            count != 1
+            count -= 1
             continue
 
         remainder_needed = number_needed - count
